@@ -1,38 +1,49 @@
 {
-  "name": "pf2e-psychic-amps",
+  "id": "pf2e-psychic-amps",
   "title": "PF2e Psychic Amps",
   "description": "A collection of Psi and Amp spells for PF2e Psychics on Foundry VTT.",
-  "author": "Tikael",
-  "authors": [],
+  "authors": [{
+    "name": "Tikael"
+  }],
   "url": "https://github.com/TikaelSol/PF2e-Psychic-Amps",
-  "version": "1.0",
-  "minimumCoreVersion": "9",
-  "compatibleCoreVersion": "9",
+  "version": "2.0",
+  "compatibility": {
+    "minimum": "10.282",
+    "verified": "10.282"
+  },
   "scripts": [],
   "esmodules": [],
   "styles": [],
   "languages": [],
-  "packs": [
-    {
-      "label": "Psychic Psi cantrips",
-      "name": "psychic-psi-cantrips",
-      "path": "/packs/psychic-cantrips.db",
-      "system": "pf2e",
-      "package": "pf2e-psychic-amps",
-      "private": false,
-      "type": "Item",
-      "entity": "Item"
-    }
-  ],
-  "system": [
-    "pf2e"
-  ],
-  "dependencies": [],
-  "socket": false,
+  "packs": [{
+    "label": "Psychic Psi and Amped Cantrips",
+    "name": "psychic-psi-cantrips",
+    "path": "/packs/psychic-cantrips.db",
+    "system": "pf2e",
+    "private": false,
+    "type": "Item"
+  }, {
+    "label": "Psychic Amped Effects",
+    "name": "psychic-amped-effects",
+    "path": "/packs/effects.db",
+    "system": "pf2e",
+    "private": false,
+    "type": "Item"
+  }],
+  "relationships": {
+    "dependencies": [{
+      "id": "pf2e",
+      "type": "system"
+    }],
+    "systems": [{
+      "id": "pf2e",
+      "type": "system",
+      "compatibility": {
+        "minimum": "4.11.1"
+      }
+    }]
+  },
   "manifest": "https://raw.githubusercontent.com/TikaelSol/PF2e-Psychic-Amps/master/module.json",
   "download": "https://github.com/TikaelSol/PF2e-Psychic-Amps/archive/refs/heads/main.zip",
-  "protected": false,
-  "coreTranslation": false,
-  "minimumSystemVersion": "3.13.0",
-  "library": false
+  "protected": false
 }

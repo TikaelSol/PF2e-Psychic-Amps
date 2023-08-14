@@ -15,6 +15,20 @@
   "esmodules": [],
   "styles": [],
   "languages": [],
+    "packFolders":[
+    {
+      "name": "PF2e Psychic Amps",
+      "sorting": "m",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "packs":[
+        "psychic-psi-cantrips",
+        "psychic-amped-effects"
+      ]
+    }
+  ],
   "packs": [{
     "label": "Psychic Psi and Amped Cantrips",
     "name": "psychic-psi-cantrips",

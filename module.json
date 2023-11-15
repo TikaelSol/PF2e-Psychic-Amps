@@ -9,8 +9,8 @@
   "url": "https://github.com/TikaelSol/PF2e-Psychic-Amps",
   "version": "2.0.1",
   "compatibility": {
-    "minimum": "10.282",
-    "verified": "11"
+    "minimum": "11",
+    "verified": "11.315"
   },
   "packs": [{
     "label": "Psychic Psi and Amped Cantrips",
@@ -52,7 +52,7 @@
       "id": "pf2e",
       "type": "system",
       "compatibility": {
-        "minimum": "4.11.1"
+        "minimum": "5.9"
       }
     }]
   },

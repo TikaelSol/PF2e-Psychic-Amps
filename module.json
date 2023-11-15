@@ -2,48 +2,55 @@
   "id": "pf2e-psychic-amps",
   "title": "PF2e Psychic Amps",
   "description": "A collection of Psi and Amp spells for PF2e Psychics on Foundry VTT.",
-  "authors": [{
-    "name": "Tikael"
-  }],
+  "authors": [
+    {
+      "name": "Tikael",
+      "flags": {}
+    }
+  ],
   "url": "https://github.com/TikaelSol/PF2e-Psychic-Amps",
-  "version": "2.0",
+  "version": "2.0.1",
   "compatibility": {
     "minimum": "10.282",
-    "verified": "10.282"
+    "verified": "11"
   },
-  "scripts": [],
-  "esmodules": [],
-  "styles": [],
-  "languages": [],
-  "packs": [{
-    "label": "Psychic Psi and Amped Cantrips",
-    "name": "psychic-psi-cantrips",
-    "path": "/packs/psychic-cantrips.db",
-    "system": "pf2e",
-    "private": false,
-    "type": "Item"
-  }, {
-    "label": "Psychic Amped Effects",
-    "name": "psychic-amped-effects",
-    "path": "/packs/effects.db",
-    "system": "pf2e",
-    "private": false,
-    "type": "Item"
-  }],
+  "packs": [
+    {
+      "label": "Psychic Psi and Amped Cantrips",
+      "name": "psychic-psi-cantrips",
+      "path": "/packs/psychic-cantrips",
+      "system": "pf2e",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "label": "Psychic Amped Effects",
+      "name": "psychic-amped-effects",
+      "path": "/packs/effects",
+      "system": "pf2e",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    }
+  ],
   "relationships": {
-    "dependencies": [{
-      "id": "pf2e",
-      "type": "system"
-    }],
-    "systems": [{
-      "id": "pf2e",
-      "type": "system",
-      "compatibility": {
-        "minimum": "4.11.1"
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4.11.1"
+        }
       }
-    }]
+    ]
   },
   "manifest": "https://raw.githubusercontent.com/TikaelSol/PF2e-Psychic-Amps/master/module.json",
-  "download": "https://github.com/TikaelSol/PF2e-Psychic-Amps/archive/refs/heads/main.zip",
-  "protected": false
+  "download": "https://github.com/TikaelSol/PF2e-Psychic-Amps/archive/refs/heads/main.zip"
 }

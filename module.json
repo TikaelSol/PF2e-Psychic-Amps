@@ -2,59 +2,65 @@
   "id": "pf2e-psychic-amps",
   "title": "PF2e Psychic Amps",
   "description": "A collection of Psi and Amp spells for PF2e Psychics on Foundry VTT.",
-  "authors": [{
-    "name": "Tikael",
-    "flags": {}
-  }],
+  "authors": [
+    {
+      "name": "Tikael",
+      "flags": {}
+    }
+  ],
   "url": "https://github.com/TikaelSol/PF2e-Psychic-Amps",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "compatibility": {
-    "minimum": "11",
+    "minimum": "10.291",
     "verified": "11.315"
   },
-  "packs": [{
-    "label": "Psychic Psi and Amped Cantrips",
-    "name": "psychic-psi-cantrips",
-    "path": "/packs/psychic-cantrips",
-    "system": "pf2e",
-    "type": "Item",
-    "ownership": {
-      "PLAYER": "OBSERVER",
-      "ASSISTANT": "OWNER"
+  "packs": [
+    {
+      "label": "Psychic Psi and Amped Cantrips",
+      "name": "psychic-psi-cantrips",
+      "path": "/packs/psychic-cantrips",
+      "system": "pf2e",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
     },
-    "flags": {}
-  }, {
-    "label": "Psychic Amped Effects",
-    "name": "psychic-amped-effects",
-    "path": "/packs/effects",
-    "system": "pf2e",
-    "type": "Item",
-    "ownership": {
-      "PLAYER": "OBSERVER",
-      "ASSISTANT": "OWNER"
-    },
-    "flags": {}
-  }],
-  "packFolders": [{
-    "name": "Psychic Amps",
-    "sorting": "m",
-    "ownership": {
-      "PLAYER": "NONE",
-      "ASSISTANT": "OWNER"
-    },
-    "packs": [
-      "psychic-psi-cantrips",
-      "psychic-amped-effects"
-    ]
-  }],
+    {
+      "label": "Psychic Amped Effects",
+      "name": "psychic-amped-effects",
+      "path": "/packs/effects",
+      "system": "pf2e",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Psychic Amps",
+      "sorting": "m",
+      "packs": [
+        "psychic-psi-cantrips",
+        "psychic-amped-effects"
+      ],
+      "folders": []
+    }
+  ],
   "relationships": {
-    "systems": [{
-      "id": "pf2e",
-      "type": "system",
-      "compatibility": {
-        "minimum": "5.9"
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.9"
+        }
       }
-    }]
+    ]
   },
   "manifest": "https://raw.githubusercontent.com/TikaelSol/PF2e-Psychic-Amps/master/module.json",
   "download": "https://github.com/TikaelSol/PF2e-Psychic-Amps/archive/refs/heads/main.zip"

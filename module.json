@@ -9,9 +9,9 @@
     }
   ],
   "url": "https://github.com/TikaelSol/PF2e-Psychic-Amps",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "compatibility": {
-    "minimum": "10.291",
+    "minimum": "11.315",
     "verified": "11.315"
   },
   "packs": [
